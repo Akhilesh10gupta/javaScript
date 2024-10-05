@@ -21,7 +21,7 @@ let IsLoggedIn = false
 
 // object
 
-console.log(typeof"akhilesh")
+console.log(typeof"akhilesh gupta")
 console.log(typeof age)
 console.log(typeof undefined) //undefined
 console.log(typeof null) //object
