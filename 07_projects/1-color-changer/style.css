@@ -23,11 +23,25 @@ html {
     text-decoration: none;
     color: #1b1b1b;
   }
+
+  nav a:hover{
+    border: solid 1px rgb(237, 237, 237);
+    background-color: #6e0f0f;
+    color: #ffffff;
+  }
   
   nav a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
   }
+
+
+nav a:hover[aria-current='page'] {
+    color: #ffffff;
+    background-color: #141414;
+  }
+  
+
 
   
   span {
@@ -48,18 +62,62 @@ html {
   
   #grey {
     background: grey;
+    width: 100px; /* Set a width */
+    height: 100px; /* Set a height */
+    display: inline-block; /* Make it a block element for width/height */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+  }
+
+  #grey:hover {
+    transform: scale(1.1);
+    
   }
   
   #white {
+    width: 100px; /* Set a width */
+    height: 100px; /* Set a height */
+    display: inline-block; /* Make it a block element for width/height */
+    transition: transform 0.3s; /* Smooth transition for scaling */
     background: white;
   }
+
+  #white:hover{
+    transform: scale(1.1);
+  }
+
   #blue {
     background: blue;
+    width: 100px; /* Set a width */
+    height: 100px; /* Set a height */
+    display: inline-block; /* Make it a block element for width/height */
+    transition: transform 0.3s; /* Smooth transition for scaling */
   }
+
+  #blue:hover{
+    transform: scale(1.1);
+  }
+  
   #yellow {
     background: yellow;
+    width: 100px; /* Set a width */
+    height: 100px; /* Set a height */
+    display: inline-block; /* Make it a block element for width/height */
+    transition: transform 0.3s; /* Smooth transition for scaling */
   }
+
+  #yellow:hover{
+    transform: scale(1.1);
+  }
+
   #purple {
     background: purple;
+    width: 100px; /* Set a width */
+    height: 100px; /* Set a height */
+    display: inline-block; /* Make it a block element for width/height */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+  }
+
+  #purple:hover{
+    transform: scale(1.1);
   }
   

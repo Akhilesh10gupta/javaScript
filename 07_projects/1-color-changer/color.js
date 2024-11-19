@@ -22,4 +22,10 @@ buttons. forEach(function (button) {
                 body.style.backgroundColor = e.target.id;
             }
         })
-    });
+   
+});
+
+// for make cursor of button on hover on button 
+buttons.forEach(button => {
+    button.style.cursor = 'pointer'; // Set cursor to pointer
+});

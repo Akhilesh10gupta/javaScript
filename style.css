@@ -30,10 +30,21 @@
     text-decoration: none;
     color: #1b1b1b;
   }
+
+  nav a:hover{
+    border: solid 1px rgb(237, 237, 237);
+    background-color: #6e0f0f;
+    color: #ffffff;
+  }
   
   nav a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
+  }
+
+  nav a:hover[aria-current='page'] {
+    color: #ffffff;
+    background-color: #141414;
   }
   
   main {
@@ -55,6 +66,16 @@
     padding: 10px 30px;
     border-radius: 8px;
     color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    margin-top: 5px;
+  }
+
+  .project-link:hover {
+    background-color: #4f4f4f;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fefefe;
     text-decoration: none;
     border: 2px solid #212121;
     margin-top: 5px;
