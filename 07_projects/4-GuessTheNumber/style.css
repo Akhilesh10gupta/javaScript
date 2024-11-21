@@ -113,7 +113,7 @@ nav a:hover[aria-current='page'] {
   #wrapper {
     box-sizing: border-box;
     text-align: center;
-    width: 450px;
+    width: 100%;
     height: 550px;
     background-color: #474747;
     color: #fff;
