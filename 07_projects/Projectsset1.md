@@ -151,8 +151,8 @@ function checkGuess(guess) {
 function displayGuess(guess) {
     userInput.value = '';
     guessSlot.innerHTML += `${guess}, `;
-    numGuess++;
     remaining.innerHTML = `${10 - numGuess}`;
+    numGuess++;
 }
 
 function displayMessage(message) {

@@ -107,6 +107,7 @@ nav a:hover[aria-current='page'] {
   }
   
   #wrapper {
+    margin:0 auto;
     box-sizing: border-box;
     text-align: center;
     width: 400px;
