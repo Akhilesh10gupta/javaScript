@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images" style="display: flex; ">
+            <li><img width="200px" id="dark-sky" src="https://i.pinimg.com/originals/31/31/af/3131af657ff5ff411a9927456352bf78.jpg" alt="photoshop"></li>
+            <li><img width="200px" id="sky" src="https://i.pinimg.com/originals/c0/da/e2/c0dae2ed4de635d22fd7b67258fdf456.jpg" alt=""></li>
+            <li><img width="200px" id="bird" src="https://i.pinimg.com/originals/a8/f7/67/a8f767446f1bbba79dac9ac607193c23.jpg" alt=""></li>
+            <li><img width="200px" id="mask" src="https://i.pinimg.com/originals/c0/14/96/c0149693b0ca81d4e87702beb414d9b6.jpg" alt="" ></li>
+            <li><img width="200px" id="river" src="https://i.pinimg.com/originals/12/fc/bc/12fcbc1239869cf5a6b8cb4cea8828e0.jpg" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('bird').onclick = function(){
+    //     alert("bird clicked")
+    // }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+
+    //best way 
+
+    // document.getElementById('bird').addEventListener('click', function(e){
+    //     console.log("bird clicked");
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
