@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: #eee;
+  }
+  
+  nav a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px rgb(22, 22, 22);
+    text-align: center;
+    text-decoration: none;
+    color: #1b1b1b;
+  }
+
+  nav a:hover{
+    border: solid 1px rgb(237, 237, 237);
+    background-color: #6e0f0f;
+    color: #ffffff;
+  }
+  
+  nav a[aria-current='page'] {
+    color: #000;
+    background-color: #d4d4d4;
+  }
+
+
+nav a:hover[aria-current='page'] {
+    color: #ffffff;
+    background-color: #141414;
+  }
+
+      .center {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #clock {
+        font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+        
+    </style>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <nav>
+        <a href="../../index.html" aria-current="page">Home</a>
+        <a target="_blank" href="https://github.com/Akhilesh10gupta?tab=repositories"
+          >Repolink</a
+        >
+    </nav>
+
+    <h1>Start should change the Background color every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script src="script.js"></script>
+</html>
